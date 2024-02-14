@@ -147,6 +147,7 @@ const Login = ({ navigation }) => {
             marginTop: 18,
             marginBottom: 4,
           }}
+          onPress = {()=> navigation.navigate("Home")}
         />
 
         <View
@@ -266,7 +267,7 @@ const Login = ({ navigation }) => {
             marginVertical: 22,
           }}
         >
-          <Pressable onPress={() => navigation.navigate("Home")}>
+          {/* <Pressable onPress={() => navigation.navigate("Home")}>
             <Text
               style={{
                 fontSize: 16,
@@ -277,7 +278,7 @@ const Login = ({ navigation }) => {
             >
               Test
             </Text>
-          </Pressable>
+          </Pressable> */}
         </View>
       </View>
     </SafeAreaView>

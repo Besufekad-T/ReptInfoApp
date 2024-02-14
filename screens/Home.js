@@ -5,15 +5,18 @@ import TabNavigation from '../navigation/TabNavigation';
 
 export default function Home({ navigation }) {
   return (
+    
     <View style={styles.container}>
       <Text style={styles.text}>Home</Text>
       <View style={{
         flexDirection: "row",
         justifyContent: "center",
         marginVertical: 22
+        
       }}>
         <Pressable
           onPress={() => navigation.navigate("Signup")}
+          
         >
           <Text style={{
             fontSize: 16,

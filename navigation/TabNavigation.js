@@ -26,7 +26,6 @@ const screenOptions = {
 
 const TabNavigation = () => {
   return (
-    <NavigationContainer>
       <Tab.Navigator screenOptions={screenOptions}>
         <Tab.Screen 
           name="Home" 
@@ -114,7 +113,6 @@ const TabNavigation = () => {
           }}
         />
       </Tab.Navigator>
-    </NavigationContainer>
   )
 }
 
