@@ -15,75 +15,25 @@ const Welcome = ({ navigation }) => {
         >
             <View style={{ flex: 1 }}>
                 <View>
-                    <Image
-                        source={require("../assets/favicon.png")}
-                        style={{
-                            height: 100,
-                            width: 100,
-                            borderRadius: 20,
-                            position: "absolute",
-                            top: 10,
-                            transform: [
-                                { translateX: 20 },
-                                { translateY: 50 },
-                                { rotate: "-15deg" }
-                            ]
-                        }}
-                    />
 
                     <Image
-                        source={require("../assets/favicon.png")}
-                        style={{
-                            height: 100,
-                            width: 100,
-                            borderRadius: 20,
-                            position: "absolute",
-                            top: -30,
-                            left: 100,
-                            transform: [
-                                { translateX: 50 },
-                                { translateY: 50 },
-                                { rotate: "-5deg" }
-                            ]
-                        }}
-                    />
-
-                    <Image
-                        source={require("../assets/favicon.png")}
-                        style={{
-                            width: 100,
-                            height: 100,
-                            borderRadius: 20,
-                            position: "absolute",
-                            top: 130,
-                            left: -50,
-                            transform: [
-                                { translateX: 50 },
-                                { translateY: 50 },
-                                { rotate: "15deg" }
-                            ]
-                        }}
-                    />
-
-                    <Image
-                        source={require("../assets/favicon.png")}
+                        source={require("../assets/rpetreg.png")}
                         style={{
                             height: 200,
-                            width: 200,
+                            width: 237,
                             borderRadius: 20,
                             position: "absolute",
                             top: 110,
-                            left: 100,
+                            left: 30,
                             transform: [
                                 { translateX: 50 },
                                 { translateY: 50 },
-                                { rotate: "-15deg" }
+                                // { rotate: "-15deg" }
                             ]
                         }}
                     />
                 </View>
 
-                {/* content  */}
 
                 <View style={{
                     paddingHorizontal: 22,
@@ -94,24 +44,25 @@ const Welcome = ({ navigation }) => {
                     <Text style={{
                         fontSize: 50,
                         fontWeight: 800,
-                        color: COLORS.white
-                    }}>Let's Get</Text>
+                        color: COLORS.white,
+                        left:70
+                    }}>Welcome </Text>
                     <Text style={{
                         fontSize: 46,
                         fontWeight: 800,
-                        color: COLORS.white
-                    }}>Started</Text>
+                        color: COLORS.white,
+                        left:140
+                    }}>To</Text>
+                    <Text style={{
+                        fontSize: 46,
+                        fontWeight: 800,
+                        color: COLORS.white,
+                        left:65
+                    }}>REPTINFO</Text>
 
                     <View style={{ marginVertical: 22 }}>
-                        <Text style={{
-                            fontSize: 16,
-                            color: COLORS.white,
-                            marginVertical: 4
-                        }}>Connect with each other Reptile enthusiasts</Text>
-                        <Text style={{
-                            fontSize: 16,
-                            color: COLORS.white,
-                        }}>Take care of your Reptile</Text>
+                      
+    
                     </View>
 
                     <Button

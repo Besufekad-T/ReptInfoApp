@@ -10,8 +10,9 @@ const Signup = ({ navigation }) => {
     const [isPasswordShown, setIsPasswordShown] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
     return (
+        
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
-            <View style={{ flex: 1, marginHorizontal: 22 }}>
+            <View style={{ flex: 1, marginHorizontal: 22,top:40 }}>
                 <View style={{ marginVertical: 22 }}>
                     <Text style={{
                         fontSize: 22,
@@ -22,10 +23,6 @@ const Signup = ({ navigation }) => {
                         Create Account
                     </Text>
 
-                    <Text style={{
-                        fontSize: 16,
-                        color: COLORS.black
-                    }}>Connect with your friend today!</Text>
                 </View>
 
                 <View style={{ marginBottom: 12 }}>
@@ -75,7 +72,7 @@ const Signup = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='+91'
+                            placeholder='+1'
                             placeholderTextColor={COLORS.black}
                             keyboardType='numeric'
                             style={{
@@ -153,7 +150,7 @@ const Signup = ({ navigation }) => {
                         color={isChecked ? COLORS.primary : undefined}
                     />
 
-                    <Text>I aggree to the terms and conditions</Text>
+                    <Text>I agree to the terms and conditions</Text>
                 </View>
 
                 <Button
@@ -204,16 +201,16 @@ const Signup = ({ navigation }) => {
                         }}
                     >
                         <Image
-                            source={require("../assets/favicon.png")}
+                        source={require("../assets/igicon.png")}
                             style={{
-                                height: 36,
-                                width: 36,
-                                marginRight: 8
-                            }}
-                            resizeMode='contain'
-                        />
-
-                        <Text>Facebook</Text>
+                            height: 36,
+                            width: 36,
+                            marginRight: 8,
+                                              }}
+                            resizeMode="contain"
+                            />
+        
+                        <Text>Instagram</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
@@ -231,13 +228,13 @@ const Signup = ({ navigation }) => {
                         }}
                     >
                         <Image
-                            source={require("../assets/favicon.png")}
-                            style={{
-                                height: 36,
-                                width: 36,
-                                marginRight: 8
-                            }}
-                            resizeMode='contain'
+                        source={require("../assets/gogicon.png")}
+                        style={{
+                         height: 36,
+                         width: 36,
+                         marginRight: 8,
+                                         }}
+                         resizeMode="contain"
                         />
 
                         <Text>Google</Text>

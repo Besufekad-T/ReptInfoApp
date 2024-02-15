@@ -19,7 +19,7 @@ const Login = ({ navigation }) => {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
-      <View style={{ flex: 1, marginHorizontal: 22 }}>
+      <View style={{ flex: 1, marginHorizontal: 22,top:70}}>
         <View style={{ marginVertical: 22 }}>
           <Text
             style={{
@@ -29,17 +29,9 @@ const Login = ({ navigation }) => {
               color: COLORS.black,
             }}
           >
-            Hi Welcome Back ! 👋
+            Welcome Back ! 
           </Text>
 
-          <Text
-            style={{
-              fontSize: 16,
-              color: COLORS.black,
-            }}
-          >
-            Hello again you have been missed!
-          </Text>
         </View>
 
         <View style={{ marginBottom: 12 }}>
@@ -137,7 +129,7 @@ const Login = ({ navigation }) => {
             color={isChecked ? COLORS.primary : undefined}
           />
 
-          <Text>Remenber Me</Text>
+          <Text>Remember Me</Text>
         </View>
 
         <Button
@@ -197,7 +189,7 @@ const Login = ({ navigation }) => {
             }}
           >
             <Image
-              source={require("../assets/favicon.png")}
+              source={require("../assets/igicon.png")}
               style={{
                 height: 36,
                 width: 36,
@@ -206,7 +198,7 @@ const Login = ({ navigation }) => {
               resizeMode="contain"
             />
 
-            <Text>Facebook</Text>
+            <Text>Insagram</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -224,7 +216,7 @@ const Login = ({ navigation }) => {
             }}
           >
             <Image
-              source={require("../assets/favicon.png")}
+              source={require("../assets/gogicon.png")}
               style={{
                 height: 36,
                 width: 36,
@@ -255,6 +247,7 @@ const Login = ({ navigation }) => {
                 fontWeight: "bold",
                 marginLeft: 6,
               }}
+              onPress = {()=> navigation.navigate("Signup")}
             >
               Register
             </Text>
@@ -267,18 +260,6 @@ const Login = ({ navigation }) => {
             marginVertical: 22,
           }}
         >
-          {/* <Pressable onPress={() => navigation.navigate("Home")}>
-            <Text
-              style={{
-                fontSize: 16,
-                color: COLORS.primary,
-                fontWeight: "bold",
-                marginLeft: 6,
-              }}
-            >
-              Test
-            </Text>
-          </Pressable> */}
         </View>
       </View>
     </SafeAreaView>
