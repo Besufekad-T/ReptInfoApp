@@ -34,5 +34,7 @@ firebase.js
 
 # typescript
 *.tsbuildinfo
-firebase.js
+
+# dont push firebase
+firebase.js   
 
