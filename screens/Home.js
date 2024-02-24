@@ -1,7 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, Pressable } from 'react-native';
 import COLORS from '../constants/colors';
-import TabNavigation from '../navigation/TabNavigation';
+import HomeButton from '../components/HomeButtons';
+import TriviaButton from '../components/TriviaButton';
+import Divider from '../components/Divider';
+
 
 export default function Home({ navigation }) {
   return (
@@ -15,16 +18,16 @@ export default function Home({ navigation }) {
         
       }}>
         <Pressable
-          onPress={() => navigation.navigate("Signup")}
+          onPress={() => navigation.navigate("petreg")}
+          style={styles.buttoncontainer}
           
         >
-          <Text style={{
-            fontSize: 16,
-            color: COLORS.primary,
-            fontWeight: "bold",
-            marginLeft: 6
-          }}>Back</Text>
+         <HomeButton/>
+         <Divider/>
+         <TriviaButton/>
+         
         </Pressable>
+        
       </View>
     </View>
   );
@@ -35,9 +38,16 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    
   },
   text: {
     fontSize: 24, 
     fontWeight: 'bold', 
   },
+  buttoncontainer:{
+   top:-200,
+   
+
+
+  }
 });
