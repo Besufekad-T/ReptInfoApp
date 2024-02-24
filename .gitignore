@@ -34,4 +34,5 @@ firebase.js
 
 # typescript
 *.tsbuildinfo
+firebase.js
 
