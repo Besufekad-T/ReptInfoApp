@@ -16,7 +16,7 @@ export default function Home({ navigation }) {
         flexDirection: "row",
         justifyContent: "center",
         marginVertical: 22,
-        top:30
+        top:31
 
         
       }}>
