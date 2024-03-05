@@ -15,6 +15,7 @@
     "@react-navigation/native": "^6.1.10",
     "@react-navigation/native-stack": "^6.9.18",
     "@react-navigation/stack": "^6.3.21",
+    "axios": "^1.6.7",
     "expo": "~50.0.6",
     "expo-camera": "^14.0.4",
     "expo-checkbox": "^2.7.0",

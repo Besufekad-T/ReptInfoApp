@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
-const HomeButton = ({ onPress, buttonText }) => {
+const SocialMediaButton = ({ onPress, buttonText }) => {
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/petreg.png')} style={styles.image} />
-      <Text style={styles.text}>Reptile Pet Registration</Text>
+      <Image source={require('../assets/trivialogo.png')} style={styles.image} />
+      <Text style={styles.text}>ReptInfo Social Media</Text>
     </View>
   );
 };
@@ -38,4 +38,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeButton;
+export default SocialMediaButton;

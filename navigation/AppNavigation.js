@@ -3,6 +3,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { Login,signup,Welcome, Home } from '../screens';
 import TabNavigation from './TabNavigation';
 import ReptileRegistrationScreen from '../screens/PetRegisteration';
+import ReptileRecognition from '../screens/ReptileRecognition';
+import SocialMedia from '../screens/SocialMedia';
 
 const Stack = createNativeStackNavigator();
 
@@ -44,6 +46,20 @@ export default function App() {
         <Stack.Screen
           name="petreg"
           component={ReptileRegistrationScreen}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen
+          name="ReptRec"
+          component={ReptileRecognition}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen
+          name="SocMedia"
+          component={SocialMedia}
           options={{
             headerShown: false
           }}

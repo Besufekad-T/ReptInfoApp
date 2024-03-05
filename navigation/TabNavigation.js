@@ -7,6 +7,7 @@ import { Entypo } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import ReptileRecognition from '../screens/ReptileRecognition';
 
 const Tab = createBottomTabNavigator();
 
@@ -57,7 +58,7 @@ const TabNavigation = () => {
         />
         <Tab.Screen 
           name="Camera" 
-          component={Camera} 
+          component={ReptileRecognition} 
           options={{
             tabBarIcon: ({ focused }) => {
               return (
