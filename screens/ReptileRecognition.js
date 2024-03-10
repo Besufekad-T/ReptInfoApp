@@ -3,7 +3,7 @@ import { View, Button, Image, StyleSheet } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import axios from 'axios';
 
-const VisionAPIKey = 'YOUR_VISION_API_KEY';
+const VisionAPIKey = 'AIzaSyDr8Q00Qu4PIlNXddHn9P8r13eRiylcsZc';
 
 const ReptileRecognition = () => {
   const [imageUri, setImageUri] = useState(null);
@@ -47,19 +47,11 @@ const ReptileRecognition = () => {
 
       let response = await axios.post(
         `https://vision.googleapis.com/v1/images:annotate?key=${VisionAPIKey}`,
+        formData,
         {
-          requests: [
-            {
-              image: {
-                content: formData,
-              },
-              features: [
-                {
-                  type: 'LABEL_DETECTION',
-                },
-              ],
-            },
-          ],
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
         }
       );
 
