@@ -21,8 +21,8 @@ const prompt = [
 ];
 
 export default function Trivia() {
-  const [messages, setMessages] = useState([]); // for GiftedChat
-  const [messagesGPT, setMessagesGPT] = useState(prompt); // for ChatGPT
+  const [messages, setMessages] = useState([]); // for GiftedChat state
+  const [messagesGPT, setMessagesGPT] = useState(prompt); // for ChatGPT state
 
   async function fetchInitialMessage() {
     const response = await getChat(prompt);
