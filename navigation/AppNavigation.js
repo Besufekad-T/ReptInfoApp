@@ -5,6 +5,7 @@ import TabNavigation from './TabNavigation';
 import ReptileRegistrationScreen from '../screens/PetRegisteration';
 import ReptileRecognition from '../screens/ReptileRecognition';
 import SocialMedia from '../screens/SocialMedia';
+import Trivia from '../screens/Trivia';
 
 const Stack = createNativeStackNavigator();
 
@@ -60,6 +61,13 @@ export default function App() {
         <Stack.Screen
           name="SocMedia"
           component={SocialMedia}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen
+          name="Trivia"
+          component={Trivia}
           options={{
             headerShown: false
           }}

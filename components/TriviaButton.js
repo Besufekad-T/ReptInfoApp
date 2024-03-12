@@ -5,7 +5,7 @@ const TriviaButton = ({ onPress, buttonText }) => {
   return (
     <View style={styles.container}>
       <Image source={require('../assets/trivialogo.png')} style={styles.image} />
-      <Text style={styles.text}>ReptInfo Trivia</Text>
+      <Text style={styles.text}>ReptEmoji Trivia</Text>
     </View>
   );
 };

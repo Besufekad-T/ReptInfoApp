@@ -37,7 +37,7 @@ export default function Home({ navigation }) {
         
       }}>
         <Pressable
-          // onPress={() => navigation.navigate("SocMedia")}
+          onPress={() => navigation.navigate("Trivia")}
           style={styles.buttoncontainer}
 
         >
