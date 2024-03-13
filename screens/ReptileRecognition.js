@@ -3,6 +3,8 @@ import { View, Button, Image, StyleSheet } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import axios from 'axios';
 
+// Added the Google Vision API key with settings from Google Cloud
+// I assumed that the settings are correct and the API key is valid
 const VisionAPIKey = 'AIzaSyDr8Q00Qu4PIlNXddHn9P8r13eRiylcsZc';
 
 const ReptileRecognition = () => {
@@ -47,6 +49,11 @@ const ReptileRecognition = () => {
 
       let response = await axios.post(
         `https://vision.googleapis.com/v1/images:annotate?key=${VisionAPIKey}`,
+        formData,
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
         formData,
         {
           headers: {

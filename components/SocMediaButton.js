@@ -4,7 +4,7 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 const SocialMediaButton = ({ onPress, buttonText }) => {
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/reptile_social_media_logo.png')} style={styles.image} />
+      <Image source={require('../assets/socialmedia.png')} style={styles.image} />
       <Text style={styles.text}>ReptInfo Social Media</Text>
     </View>
   );
