@@ -46,6 +46,7 @@ const ReptileRecognition = () => {
         type: 'image/jpeg',
         name: 'photo.jpg',
       });
+      // Hello example
 
       let response = await axios.post(
         `https://vision.googleapis.com/v1/images:annotate?key=${VisionAPIKey}`,
